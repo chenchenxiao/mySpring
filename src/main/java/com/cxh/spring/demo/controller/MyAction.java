@@ -41,26 +41,32 @@ public class MyAction {
 	
 	public void test(Object object) {
 		queryService = (QueryService) object;
+		queryService.toString();
 	}
 	
 	public void test2(Object object) {
 		queryService = (QueryService) object;
+			queryService.toString();
 	}
 	
 	public void test3(Object object) {
 		queryService = (QueryService) object;
+			queryService.toString();
 	}
 	
 	public void test4(Object object) {
 		queryService = (QueryService) object;
+			queryService.toString();
 	}
 	
 	public void test5(Object object) {
 		queryService = (QueryService) object;
+			queryService.toString();
 	}
 	
 	public void test6(Object object) {
 		queryService = (QueryService) object;
+			queryService.toString();
 	}
 	
 	@BlseRequestMapping("/add*.json")
