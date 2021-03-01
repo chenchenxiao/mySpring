@@ -39,35 +39,33 @@ public class MyAction {
 		return out(response,result);
 	}
 	
-	public void test(Object object) {
-		queryService = (QueryService) object;
-		queryService.toString();
-	}
-	
-	public void test2(Object object) {
-		queryService = (QueryService) object;
-			queryService.toString();
-	}
-	
-	public void test3(Object object) {
-		queryService = (QueryService) object;
-			queryService.toString();
-	}
-	
-	public void test4(Object object) {
-		queryService = (QueryService) object;
-			queryService.toString();
-	}
-	
-	public void test5(Object object) {
-		queryService = (QueryService) object;
-			queryService.toString();
-	}
-	
-	public void test6(Object object) {
-		queryService = (QueryService) object;
-			queryService.toString();
-	}
+    public void test() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
+
+    public void test1() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
+
+    public void test2() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
+
+    public void test3() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
 	
 	@BlseRequestMapping("/add*.json")
 	public BlseModelAndView add(HttpServletRequest request,HttpServletResponse response,
