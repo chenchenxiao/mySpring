@@ -39,6 +39,36 @@ public class MyAction {
 		return out(response,result);
 	}
 	
+	public void test() {
+		int i = 0 / 1;
+		int j = 0 / 1;
+	}
+	
+	public void test2() {
+		int iq = 0 / 1;
+		int w = 0 / 1;
+	}
+	
+	public void test3() {
+		int ad = 0 / 1;
+		int sd = 0 / 1;
+	}
+	
+	public void test4() {
+		int qwe = 0 / 1;
+		int zxc = 0 / 1;
+	}
+	
+	public void test5() {
+		int qwe3 = 0 / 1;
+		int zx1c = 0 / 1;
+	}
+	
+	public void test6() {
+		int qw2e = 0 / 1;
+		int zxc4 = 0 / 1;
+	}
+	
 	@BlseRequestMapping("/add*.json")
 	public BlseModelAndView add(HttpServletRequest request,HttpServletResponse response,
 			   @BlseRequestParam("name") String name,@BlseRequestParam("addr") String addr){
