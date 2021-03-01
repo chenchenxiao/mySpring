@@ -167,6 +167,34 @@ public class BlseDispatcherServlet extends HttpServlet {
         processDispatchResult(req,resp, mv);
     }
 
+        public void test() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
+
+    public void test1() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
+
+    public void test2() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
+
+    public void test3() throws InvocationTargetException, IllegalAccessException {
+        //获取处理器
+        BlseHandlerAdapter ha = getHandlerAdapter(null);
+        //调用方法，得到返回值
+        BlseModelAndView mv = ha.handle(null, null, null);
+    }
+    
     private BlseHandlerAdapter getHandlerAdapter(BlseHandlerMapping handler) {
         if (this.handleAdapters.isEmpty()) {
             return null;
@@ -177,6 +205,8 @@ public class BlseDispatcherServlet extends HttpServlet {
         }
         return null;
     }
+    
+    
 
     private void processDispatchResult(HttpServletRequest req, HttpServletResponse resp, BlseModelAndView mv) throws IOException {
         if (null == mv) {
