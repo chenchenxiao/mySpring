@@ -39,34 +39,28 @@ public class MyAction {
 		return out(response,result);
 	}
 	
-	public void test() {
-		int i = 0 / 1;
-		int j = 0 / 1;
+	public void test(Object object) {
+		queryService = (QueryService) object;
 	}
 	
-	public void test2() {
-		int iq = 0 / 1;
-		int w = 0 / 1;
+	public void test2(Object object) {
+		queryService = (QueryService) object;
 	}
 	
-	public void test3() {
-		int ad = 0 / 1;
-		int sd = 0 / 1;
+	public void test3(Object object) {
+		queryService = (QueryService) object;
 	}
 	
-	public void test4() {
-		int qwe = 0 / 1;
-		int zxc = 0 / 1;
+	public void test4(Object object) {
+		queryService = (QueryService) object;
 	}
 	
-	public void test5() {
-		int qwe3 = 0 / 1;
-		int zx1c = 0 / 1;
+	public void test5(Object object) {
+		queryService = (QueryService) object;
 	}
 	
-	public void test6() {
-		int qw2e = 0 / 1;
-		int zxc4 = 0 / 1;
+	public void test6(Object object) {
+		queryService = (QueryService) object;
 	}
 	
 	@BlseRequestMapping("/add*.json")
